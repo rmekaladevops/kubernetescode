@@ -1,0 +1,11 @@
+name: pr-trigger-job
+on:
+ pull_request:
+  branches:
+    - main
+jobs:
+  build:
+   runs-on: ubuntu-slim
+   steps:
+     - name: build phase
+       run: echo " PR trigger the job "
