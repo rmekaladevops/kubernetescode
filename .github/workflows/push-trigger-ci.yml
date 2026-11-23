@@ -1,0 +1,12 @@
+name: push-trigger
+on:
+ push:
+   branches:
+     - main
+     - develop
+jobs:
+  build:
+   runs-on: ubuntu-latest
+   steps:
+    - name: Build Phase
+      run: echo " Job triggered on push event"
