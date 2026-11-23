@@ -9,4 +9,4 @@ jobs:
    runs-on: ubuntu-latest
    steps:
     - name: Build Phase
-      run: echo " Job triggered on push event"
+      run: echo " Hello ${{vars.My_Name}}"
